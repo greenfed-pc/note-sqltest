@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #e9ecef;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #495057;
+            font-weight: bold;
+            padding: 8px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        main {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+        }
+
+        h2 {
+            color: #343a40;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .news-card {
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .news-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        a:hover {
+            color: #007bff;
+        }
+    </style>
+    <title>Заметки на C# и SQL</title>
+</head>
+
+<body>
+    <header>
+        <h1>Заметки на C# и SQL</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#about">Цель сайта</a></li>
+            <li><a href="#news">Новости</a></li>
+            <li><a href="#sources">Полезные источники</a></li>
+            <li><a href="#publications">Публикации работ и их темы</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Добро пожаловать!</h2>
+            <p>Приветствуем вас на нашем сайте! Здесь вы найдете заметки и примеры работ на языке программирования C# и языке запросов к базам данных SQL. Исследуйте разделы, чтобы узнать больше.</p>
+            <p>Если вы новичок, начните с раздела "Цель сайта", чтобы узнать, что мы здесь делаем.</p>
+        </section>
+
+        <section id="about">
+            <h2>Цель сайта</h2>
+            <p>Цель этого сайта - поделиться опытом и знаниями по программированию на C# и работе с базами данных SQL. Мы стремимся предоставить полезные заметки, примеры кода и практические рекомендации для всех, кто интересуется этой темой.</p>
+            <p>Наша команда состоит из опытных разработчиков, и мы надеемся, что материалы сайта помогут вам в освоении этих технологий.</p>
+        </section>
+
+        <section id="news">
+            <h2>Новости</h2>
+
+            <div class="news-card">
+                <h3>Запущен раздел "Полезные источники"</h3>
+                <p>Мы рады представить новый раздел сайта, где собраны полезные источники для изучения C# и SQL. Проверьте его для дополнительных ресурсов. Дата: 05.02.2024</p>
+            </div>
+
+            <div class="news-card">
+                <h3>Следите за обновлениями!</h3>
+                <p>Мы постоянно добавляем новый контент. Следите за обновлениями в разделе "Новости", чтобы быть в курсе последних событий и материалов. Дата: 06.02.2024</p>
+            </div>
+        </section>
+
+        <section id="sources">
+            <h2>Полезные источники</h2>
+            <p>Здесь мы собрали для вас список полезных ресурсов по C# и SQL:</p>
+            <ul>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/">Официальная документация по C#</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/sql/">Официальная документация по SQL Server</a></li>
+                <li><a href="https://stackoverflow.com/">Stack Overflow - вопросы и ответы программистов</a></li>
+                <li><a href="https://www.codecademy.com/learn/learn-sql">Codecademy - курс по SQL</a></li>
+            </ul>
+        </section>
+
+        <section id="publications">
+            <h2>Публикации работ и их темы</h2>
+
+            <div class="news-card">
+                <h3>Работа №1: Простой калькулятор на C#</h3>
+                <p>Пример простого калькулятора, написанного на языке C#. В работе использованы базовые операции и пользовательский интерфейс. Дата публикации: 07.02.2024</p>
+            </div>
+
+            <div class="news-card">
+                <h3>Работа №2: Работа с базой данных SQL</h3>
+                <p>Пример работы с базой данных SQL. Демонстрируется создание таблицы, вставка данных и выполнение простых запросов. Дата публикации: 08.02.2024</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Заметки на C# и SQL</p>
+    </footer>
+</body>
+
+</html>
